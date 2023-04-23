@@ -5,18 +5,21 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.function.Predicate;
 
+/**
+ * 棋子
+ */
 public class Chess implements Serializable {
     private static final long serialVersionUID = 1L;
-    private transient Checkerboard checkerboard;
+    private final transient Checkerboard checkerboard;
     private transient static ArrayList<Chess> chessArrayList;
-    private int chessX;
-    private int chessY;
+    private final int chessX;
+    private final int chessY;
     private static long initialMillis;
-    private ChessCircle chessCircle;
-    private long currentMillis;
-    private double stepTime;
-    private boolean isBlack;
-    private int count;//从0开始
+    private final ChessCircle chessCircle;
+    private final long currentMillis;
+    private final double stepTime;
+    private final boolean isBlack;
+    private final int count;//从0开始
 
     public void removeChessCircle() {
         Platform.runLater(new Runnable() {

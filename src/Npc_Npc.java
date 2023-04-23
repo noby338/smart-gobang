@@ -27,7 +27,7 @@ public class Npc_Npc extends Stage {//Application 为一个抽象方法，子类
     private static final int SCEHEIGHT = 800;//Scene的高度
     private static final int SCEWIDTH = 1000;//Scene的宽度
     private static Checkerboard checkerboard;
-    private static ArrayList<Chess> chessArrayList = new ArrayList<>();
+    private static final ArrayList<Chess> chessArrayList = new ArrayList<>();
     private int[][] coordinateArr = new int[Checkerboard.getCHELINENUM()][Checkerboard.getCHELINENUM()];//棋的坐标记录
     private Pane pane;
     private boolean isGameOver = false;

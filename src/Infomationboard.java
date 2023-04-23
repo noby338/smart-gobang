@@ -2,6 +2,9 @@ import javafx.scene.effect.DropShadow;
 import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
 
+/**
+ * 信息板
+ */
 public class Infomationboard extends Rectangle {
     public Infomationboard(Pane pane,int layoutX,int layoutY,double width,double height) {
         this.setX(layoutX);

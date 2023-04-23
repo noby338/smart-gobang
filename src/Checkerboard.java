@@ -5,6 +5,9 @@ import javafx.scene.shape.Circle;
 import javafx.scene.shape.Line;
 import javafx.scene.shape.Rectangle;
 
+/**
+ * 棋盘
+ */
 public class Checkerboard {
 
     private static final int CHESIDELENGTH = 600;//棋盘的边长
@@ -14,7 +17,6 @@ public class Checkerboard {
     private Pane pane;
     private int cheX;
     private int cheY;
-
 
     public Checkerboard(Pane pane, int cheX, int cheY) {
         //region 方形棋盘

@@ -176,9 +176,6 @@ public class LoadChess extends Stage {
             slider.setSnapToTicks(true);
             slider.setMajorTickUnit(1);
             slider.setMinorTickCount(0);
-//        slider.setBlockIncrement(3);
-//            slider.setShowTickLabels(true);
-//            slider.setShowTickMarks(true);
             getSliderValue();
             updatetarget();
             prevBtn.setDisable(false);
@@ -294,7 +291,6 @@ public class LoadChess extends Stage {
                         lables[0].setText(info[0]);
                         lables[1].setText(info[1]);
                         lables[2].setText(info[2]);
-//                        infoCircle.setBlack(Integer.parseInt(info[2].split("：")[1]) % 2 == 1);
                     }
                 });
     }
